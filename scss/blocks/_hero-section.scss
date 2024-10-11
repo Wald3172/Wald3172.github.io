@@ -1,0 +1,36 @@
+.hero-section {
+    background: radial-gradient(216.92% 143.00% at 58% 43%,rgb(245, 241, 238),rgb(211, 219, 208) 100%);
+    padding-bottom: 206px;
+    margin-bottom: 120px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+    &__wrapper {
+        position: relative;
+    }
+    &__btn-wrapper {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__circle-black {
+        position: absolute;
+        top: 156px;
+        left: 42px;
+        display: block;
+        border-radius: 100%;
+        background: radial-gradient(44.82% 44.82% at 57% 12%,rgb(58, 58, 58),rgb(38, 38, 38) 100%);
+        width: 228px;
+        height: 228px;
+        z-index: 2;
+    }
+    &__half-ellipse-dark {
+        position: absolute;
+        top: 80px;
+        left: -86px;
+        z-index: 1;
+    }
+    &__half-ellipse-light {
+        position: absolute;
+        top: 384px;
+        left: -49px;
+        z-index: 1;
+    }
+}

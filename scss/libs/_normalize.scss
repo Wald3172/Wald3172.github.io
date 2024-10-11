@@ -1,0 +1,61 @@
+/* Нормализация блочной модели */
+ *,
+ *::before,
+ *::after {
+    box-sizing: border-box;
+}
+
+/* Устранение различия в рендеринге заголовков, параграфов и других базовых элементов */
+html {
+    line-height: 1.5;                           /* Унифицированное значение line-height 150% */
+    -webkit-text-size-adjust: 100%;             /* Исправление проблемы с изменением размера шрифта в Safari */
+    -webkit-tap-highlight-color: transparent;   /* Устранение подсветки при нажатии на сенсорных устройствах */
+    scroll-behavior: smooth;                    /* Плавный скролл */
+}
+  
+/* Устранение стилей для всех элементов HTML5 */
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, figure, figcaption, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+  
+/* Поддержка правильного рендеринга изображений */
+img {
+    display: block;                             /* Превращение в блочный элемент */
+    border-style: none;                         /* Удаление обводки для изображений в старых браузерах */
+    max-width: 100%;                            /* Для адаптивности */
+    height: auto;                               /* Для корректного масштабирования */
+}
+  
+/* Исправление инлайн элементов и обнуление отступов */
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font: inherit;                              /* Унаследование шрифтов для унификации */
+    color: inherit;                             /* Унаследование цвета для унификации */
+}
+
+/* Стилизация ссылок */
+a {
+    background-color: transparent;
+    text-decoration: none;
+    color: inherit;
+}
+  
+/* Удаление возможности выделения контента в некоторых браузерах */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+/* Устранение разницы в стилях форм */
+input, button, textarea, select {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+}
+  
+/* Базовые настройки списков */
+ul, ol {
+    list-style: none;
+    padding-left: 0;
+}
